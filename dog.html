@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Details</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="dog.css" />
+</head>
+<body>
+    <nav>
+        <a href="index.html">&larr; Back to list</a>
+    </nav>
+
+    <header>
+        <h1><span id="heading-name"></span> Details</h1>
+    </header>
+
+    <main id="dog-content">
+        <div>
+            <img id="dog-image" src="" alt="Dog Image">
+        </div>
+
+        <section class="dog-info">
+            <p><strong>Name:</strong> <span id="dog-name"></span></p>
+            <p><strong>Breed:</strong> <span id="dog-breed"></span></p>
+            <p><strong>Age:</strong> <span id="dog-age"></span></p>
+            <p><strong>Sex:</strong> <span id="dog-sex"></span></p>
+            <p><strong>House Trained:</strong> <span id="dog-house-trained"></span></p>
+            <p><strong>Vaccinated:</strong> <span id="dog-vaccinated"></span></p>
+            
+            <h3>Story</h3>
+            <p id="dog-story"></p>
+        </section>
+
+        <div class="adoption-action">
+            <a id="adopt-link" href="#">
+                <button id="adopt-btn">Adopt Me!</button>
+            </a>
+        </div>
+
+        <div class="dog-navigation">
+            <button id="prev-btn">Prev</button>
+            <button id="next-btn">Next</button>
+        </div>
+    </main>
+
+    <script src="dog.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

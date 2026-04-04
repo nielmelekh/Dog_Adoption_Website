@@ -1,0 +1,10 @@
+/* Basic styling for the image and utility classes */
+#dog-image {
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+/* Class used by JS to hide navigation buttons when at the beginning/end */
+.hidden {
+    display: none !important;
+}

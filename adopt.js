@@ -26,3 +26,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     console.error("Error loading dogs:", error);
   }
 });
+
+
+
+

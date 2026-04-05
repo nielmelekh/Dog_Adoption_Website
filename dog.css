@@ -1,10 +1,115 @@
-/* Basic styling for the image and utility classes */
-#dog-image {
-    max-width: 500px;
-    height: auto;
-    border-radius: 8px;
+nav {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto 10px;
 }
-/* Class used by JS to hide navigation buttons when at the beginning/end */
+
+nav a {
+  display: inline-block;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#dog-content {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: stretch;
+}
+
+#dog-content > div:first-child {
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  display: flex; 
+}
+
+#dog-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.dog-info {
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+}
+
+.dog-info p {
+  margin-bottom: 14px;
+  font-size: 1rem;
+}
+
+.dog-info strong {
+  color: var(--text-color);
+}
+
+.dog-info h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.adoption-action {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#adopt-link {
+  display: inline-block;
+}
+
+#adopt-btn {
+  min-width: 180px;
+}
+
+.dog-navigation {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.dog-navigation button {
+  min-width: 120px;
+}
+
 .hidden {
-    display: none !important;
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  #dog-content {
+    grid-template-columns: 1fr;
+  }
+
+  #dog-image {
+    height: 300px;
+  }
+
+  .dog-navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dog-navigation button {
+    width: 100%;
+    max-width: 260px;
+  }
 }
